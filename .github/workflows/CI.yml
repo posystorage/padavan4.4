@@ -6,9 +6,9 @@ on:
     branches: # 分支
       - master # 主分支
     paths: # 路径
-      - logs/* # 监听logs目录下所有的push操作
-  watch:                              # 监视操作
-    types: [started]                  # 点击 star 之后
+      - logs/jdc-1.md # 监听logs目录下所有的jdc-1.md操作
+  #watch:                              # 监视操作
+  #  types: [started]                  # 点击 star 之后
   release:
     types: [published]
 
@@ -25,12 +25,10 @@ jobs:
     strategy:
       matrix:
         include:
-          - build_variant: "mt7621"
-            targets: "K2P"
           - build_variant: "mt7621-usb-1"
             targets: "ZTE-E8820S"
           - build_variant: "mt7621-usb-2"
-            targets: "JDCLOUD-RE-SP-01B JDCLOUD-RE-CP-02"
+            targets: "JDCLOUD-RE-SP-01B"
     steps:
       - uses: actions/checkout@v2
       - name: Prepare environment
