@@ -30,7 +30,7 @@ jobs:
           - build_variant: "mt7621-usb-1"
             targets: "ZTE-E8820S"
           - build_variant: "mt7621-usb-2"
-            targets: "RE-SP-01B"
+            targets: "JDCLOUD-RE-SP-01B JDCLOUD-RE-CP-02"
     steps:
       - uses: actions/checkout@v2
       - name: Prepare environment
