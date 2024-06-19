@@ -28,7 +28,9 @@ jobs:
           - build_variant: "mt7621"
             targets: "K2P"
           - build_variant: "mt7621-usb-1"
-            targets: "JDC-1 ZTE-E8820S"
+            targets: "ZTE-E8820S"
+          - build_variant: "mt7621-usb-2"
+            targets: "RE-CP-02 RE-SP-01B"
     steps:
       - uses: actions/checkout@v2
       - name: Prepare environment
