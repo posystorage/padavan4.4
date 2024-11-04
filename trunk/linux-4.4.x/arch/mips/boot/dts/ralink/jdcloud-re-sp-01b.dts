@@ -74,7 +74,7 @@
 
 		partition@50000 {
 			label = "firmware";
-			reg = <0x50000 0xf30000>;/* 16M-320K */
+			reg = <0x50000 0xfB0000>;/* 16M-320K */
 		};
 
 		partition@1000000 {
